@@ -1,18 +1,28 @@
 import Testimonials from "../components/Testimonials";
+import ReactGA from "react-ga4";
 import "./Home.css";
+
+const openEmail = () => {
+  ReactGA.event({
+    category: "Clicks",
+    action: "Contact Us",
+    label: "contact button clicked!",
+    value: 1,
+  });
+  window.location.href = "mailto:hello@ceygiri.lk";
+};
 
 function Home(): JSX.Element {
   return (
     <div>
       <section
         className="hero"
-        style={{ backgroundImage: "url(/hero-bg.png)" }}
+        style={{ backgroundImage: "url(/hero-bg.jpg)" }}
       >
         <img className="logo" src="/logo.png" alt="Ceygiri Labs" />
         <p className="tagline">Transforming Sri Lankan web landscape</p>
-        <a href="mailto:hello@ceygiri.lk">
-          <button>Contact Us</button>
-        </a>
+
+        <button onClick={openEmail}>Contact Us</button>
       </section>
       <section className="row">
         <div className="column">
@@ -109,9 +119,7 @@ function Home(): JSX.Element {
           <h2 style={{ fontSize: "18px", maxWidth: "300px" }}>
             Talk to us and see what’s possible
           </h2>
-          <a href="mailto:hello@ceygiri.lk">
-            <button>Contact Us</button>
-          </a>
+          <button onClick={openEmail}>Contact Us</button>
         </div>
       </section>
     </div>
