@@ -2,7 +2,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: max(calc(100vw * 1492/1920), 780px);
+    height: max(calc(100vw * 1498/1920), 780px);
     overflow: visible;
     padding: 0;
 }
@@ -98,7 +98,7 @@ section p {
 .icon {
     max-width: 200px;
     float: right;
-    margin-left: -100px;
+    margin-right: 50px;
     margin-top: -50px;
     z-index: 0;
 }
@@ -123,6 +123,9 @@ button {
     /* font-weight: 700; */
     border-radius: 5px;
     border: none;
+}
+button:hover {
+    background-image: linear-gradient(rgba(193, 0, 0, 0.22) 0 0);
 }
 
 @media screen and (max-width: 1024px) {
@@ -163,17 +166,21 @@ button {
         margin-top: 50px;
     }
 
+                                                                                                                                .icon {
+                                                                                                                                    margin-right: 0px;
+                                                                                                                                    margin-left: -200px;
+                                                                                                                                }
 }
 
 @media screen and (max-width: 768px) {
     .hero .logo {
         top: 90px;
         font-size: 72px;
-        margin-top: 30px;
+        margin-top: 0px;
     }
 
     .tagline {
-        top: 220px;
+        top: 180px;
     }
 
     .row {

@@ -6,7 +6,7 @@ import "./App.css";
 function App(): JSX.Element {
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
 
-  const toggleNav = (): void => setIsNavOpen(!isNavOpen);
+  // const toggleNav = (): void => setIsNavOpen(!isNavOpen);
 
   return (
     <Router>

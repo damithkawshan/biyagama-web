@@ -38,7 +38,7 @@ function Home(): JSX.Element {
             </p>
           </div>
         </div>
-        <div className="column" style={{ marginTop: "-4em" }}>
+        <div className="column">
           <img src="/section-1.png" alt="Lion entrance to Sigiriya" />
         </div>
       </section>
