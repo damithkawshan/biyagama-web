@@ -1,0 +1,64 @@
+.testimonials-container {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    background-color: #E5E5E5;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: transform;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.testimonial {
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.5s ease-in-out;
+    width: 80%;
+    max-width: 600px;
+}
+
+.testimonial.active {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.message {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.prev-btn,
+.next-btn {
+    border: none;
+    background: none;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0.4;
+    transition: opacity 0.5s ease;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    opacity: 1;
+}
