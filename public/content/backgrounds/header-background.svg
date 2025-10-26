@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920" height="300" viewBox="0 0 1920 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Header background with subtle pattern -->
+  <defs>
+    <linearGradient id="headerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#003366;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#004080;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0059b3;stop-opacity:1" />
+    </linearGradient>
+    
+    <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1" fill="#ffffff" opacity="0.1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Base -->
+  <rect width="1920" height="300" fill="url(#headerGradient)"/>
+  
+  <!-- Dot pattern overlay -->
+  <rect width="1920" height="300" fill="url(#dots)"/>
+  
+  <!-- Decorative line at bottom -->
+  <rect y="295" width="1920" height="5" fill="#FFD700" opacity="0.3"/>
+</svg>

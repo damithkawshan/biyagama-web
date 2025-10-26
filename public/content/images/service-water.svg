@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="250" height="150" viewBox="0 0 250 150" xmlns="http://www.w3.org/2000/svg">
+  <!-- Water Supply Icon -->
+  <defs>
+    <linearGradient id="waterGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4FC3F7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0288D1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="250" height="150" fill="#e6f2ff" rx="8"/>
+  
+  <!-- Water tap -->
+  <rect x="80" y="40" width="60" height="8" fill="#607D8B" rx="2"/>
+  <rect x="75" y="40" width="8" height="15" fill="#546E7A"/>
+  <ellipse cx="79" cy="55" rx="4" ry="8" fill="#546E7A"/>
+  
+  <!-- Tap handle -->
+  <rect x="95" y="30" width="30" height="6" fill="#78909C" rx="3"/>
+  <circle cx="110" cy="33" r="8" fill="#607D8B"/>
+  <circle cx="110" cy="33" r="4" fill="#90A4AE"/>
+  
+  <!-- Water drops -->
+  <ellipse cx="110" cy="55" rx="3" ry="5" fill="url(#waterGrad)">
+    <animate attributeName="cy" from="55" to="100" dur="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" from="1" to="0" dur="1.5s" repeatCount="indefinite"/>
+  </ellipse>
+  
+  <ellipse cx="105" cy="65" rx="3" ry="5" fill="url(#waterGrad)">
+    <animate attributeName="cy" from="65" to="110" dur="1.5s" begin="0.3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" from="1" to="0" dur="1.5s" begin="0.3s" repeatCount="indefinite"/>
+  </ellipse>
+  
+  <ellipse cx="115" cy="70" rx="3" ry="5" fill="url(#waterGrad)">
+    <animate attributeName="cy" from="70" to="115" dur="1.5s" begin="0.6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" from="1" to="0" dur="1.5s" begin="0.6s" repeatCount="indefinite"/>
+  </ellipse>
+  
+  <!-- Water container/bucket -->
+  <path d="M80,100 L70,120 L150,120 L140,100 Z" fill="url(#waterGrad)" opacity="0.7"/>
+  <ellipse cx="110" cy="100" rx="30" ry="8" fill="url(#waterGrad)"/>
+  
+  <!-- Water waves in container -->
+  <path d="M75,110 Q90,108 105,110 T135,110" stroke="#ffffff" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <path d="M75,115 Q90,113 105,115 T135,115" stroke="#ffffff" stroke-width="1.5" fill="none" opacity="0.3"/>
+  
+  <text x="125" y="140" font-family="Arial" font-size="14" fill="#004080" text-anchor="middle" font-weight="bold">
+    Water Supply
+  </text>
+</svg>

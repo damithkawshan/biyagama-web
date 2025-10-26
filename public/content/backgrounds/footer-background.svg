@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920" height="200" viewBox="0 0 1920 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Footer background -->
+  <defs>
+    <linearGradient id="footerGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#002850;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#004080;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Base -->
+  <rect width="1920" height="200" fill="url(#footerGradient)"/>
+  
+  <!-- Decorative wave at top -->
+  <path d="M0,20 Q480,0 960,20 T1920,20 L1920,0 L0,0 Z" fill="#003366" opacity="0.5"/>
+  
+  <!-- Subtle stars/sparkles -->
+  <circle cx="200" cy="100" r="2" fill="#FFD700" opacity="0.6"/>
+  <circle cx="600" cy="80" r="1.5" fill="#FFD700" opacity="0.4"/>
+  <circle cx="1000" cy="120" r="2" fill="#FFD700" opacity="0.5"/>
+  <circle cx="1400" cy="90" r="1.5" fill="#FFD700" opacity="0.6"/>
+  <circle cx="1700" cy="110" r="2" fill="#FFD700" opacity="0.4"/>
+</svg>

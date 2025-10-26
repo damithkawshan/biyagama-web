@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="250" height="150" viewBox="0 0 250 150" xmlns="http://www.w3.org/2000/svg">
+  <!-- Public Health Icon -->
+  <rect width="250" height="150" fill="#e6f2ff" rx="8"/>
+  
+  <!-- Medical cross background -->
+  <circle cx="125" cy="65" r="40" fill="#dc3545" opacity="0.1"/>
+  
+  <!-- Medical cross -->
+  <rect x="115" y="45" width="20" height="40" fill="#dc3545" rx="2"/>
+  <rect x="105" y="55" width="40" height="20" fill="#dc3545" rx="2"/>
+  
+  <!-- Heart symbol -->
+  <path d="M125,80 C120,70 105,70 105,80 C105,87 125,100 125,100 C125,100 145,87 145,80 C145,70 130,70 125,80" fill="#FF6B6B"/>
+  
+  <!-- Medical symbols around -->
+  <circle cx="85" cy="45" r="6" fill="#ffffff" stroke="#dc3545" stroke-width="2"/>
+  <text x="85" y="50" font-family="Arial" font-size="10" fill="#dc3545" text-anchor="middle" font-weight="bold">+</text>
+  
+  <circle cx="165" cy="45" r="6" fill="#ffffff" stroke="#dc3545" stroke-width="2"/>
+  <text x="165" y="50" font-family="Arial" font-size="10" fill="#dc3545" text-anchor="middle" font-weight="bold">+</text>
+  
+  <circle cx="85" cy="85" r="6" fill="#ffffff" stroke="#dc3545" stroke-width="2"/>
+  <text x="85" y="90" font-family="Arial" font-size="10" fill="#dc3545" text-anchor="middle" font-weight="bold">+</text>
+  
+  <circle cx="165" cy="85" r="6" fill="#ffffff" stroke="#dc3545" stroke-width="2"/>
+  <text x="165" y="90" font-family="Arial" font-size="10" fill="#dc3545" text-anchor="middle" font-weight="bold">+</text>
+  
+  <!-- Shield outline -->
+  <path d="M125,30 L95,40 L95,70 Q95,90 125,100 Q155,90 155,70 L155,40 Z" fill="none" stroke="#28a745" stroke-width="2"/>
+  
+  <text x="125" y="130" font-family="Arial" font-size="14" fill="#004080" text-anchor="middle" font-weight="bold">
+    Public Health
+  </text>
+</svg>

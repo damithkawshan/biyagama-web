@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Simplified circular logo version -->
+  
+  <!-- Outer circle -->
+  <circle cx="50" cy="50" r="48" fill="#004080"/>
+  <circle cx="50" cy="50" r="44" fill="#ffffff"/>
+  <circle cx="50" cy="50" r="40" fill="#0059b3"/>
+  
+  <!-- Building silhouette -->
+  <rect x="35" y="45" width="8" height="20" fill="#ffffff"/>
+  <rect x="45" y="45" width="8" height="20" fill="#ffffff"/>
+  <rect x="55" y="45" width="8" height="20" fill="#ffffff"/>
+  
+  <!-- Roof -->
+  <polygon points="50,35 32,45 68,45" fill="#ffffff"/>
+  <rect x="32" y="43" width="36" height="3" fill="#ffffff"/>
+  
+  <!-- Windows -->
+  <rect x="37" y="48" width="3" height="3" fill="#0059b3"/>
+  <rect x="37" y="54" width="3" height="3" fill="#0059b3"/>
+  <rect x="47" y="48" width="3" height="3" fill="#0059b3"/>
+  <rect x="47" y="54" width="3" height="3" fill="#0059b3"/>
+  <rect x="57" y="48" width="3" height="3" fill="#0059b3"/>
+  <rect x="57" y="54" width="3" height="3" fill="#0059b3"/>
+  
+  <!-- Bottom text -->
+  <circle cx="50" cy="50" r="46" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.5"/>
+</svg>

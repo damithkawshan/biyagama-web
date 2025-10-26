@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="250" height="150" viewBox="0 0 250 150" xmlns="http://www.w3.org/2000/svg">
+  <!-- Building Permits Icon -->
+  <rect width="250" height="150" fill="#e6f2ff" rx="8"/>
+  
+  <!-- Blueprint/Document -->
+  <rect x="60" y="35" width="130" height="90" fill="#ffffff" stroke="#004080" stroke-width="2" rx="4"/>
+  
+  <!-- Building outline on document -->
+  <rect x="90" y="60" width="20" height="35" fill="none" stroke="#0059b3" stroke-width="2"/>
+  <rect x="115" y="60" width="20" height="35" fill="none" stroke="#0059b3" stroke-width="2"/>
+  <rect x="140" y="60" width="20" height="35" fill="none" stroke="#0059b3" stroke-width="2"/>
+  <polygon points="125,48 85,60 165,60" fill="none" stroke="#0059b3" stroke-width="2"/>
+  
+  <!-- Grid lines -->
+  <line x1="70" y1="50" x2="180" y2="50" stroke="#e0e0e0" stroke-width="1"/>
+  <line x1="70" y1="105" x2="180" y2="105" stroke="#e0e0e0" stroke-width="1"/>
+  <line x1="80" y1="35" x2="80" y2="125" stroke="#e0e0e0" stroke-width="1"/>
+  <line x1="170" y1="35" x2="170" y2="125" stroke="#e0e0e0" stroke-width="1"/>
+  
+  <!-- Stamp -->
+  <circle cx="165" cy="105" r="12" fill="none" stroke="#dc3545" stroke-width="2"/>
+  <text x="165" y="110" font-family="Arial" font-size="8" fill="#dc3545" text-anchor="middle" font-weight="bold">
+    OK
+  </text>
+  
+  <text x="125" y="140" font-family="Arial" font-size="14" fill="#004080" text-anchor="middle" font-weight="bold">
+    Building Permits
+  </text>
+</svg>
