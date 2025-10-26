@@ -11,21 +11,27 @@ function Testimonials(): JSX.Element {
   const [testimonials, setTestimonials] = useState<Testimonial[]>([
     {
       id: 1,
-      name: "Kaushan",
+      name: "John Doe",
       message:
-        "Ceygiri Labs provided us with top-notch software solutions that transformed the way we do business. Their expertise and attention to detail made all the difference.",
+        "The services provided by the Biyagama Pradeshiya Sabha have been exceptional. Highly recommended!",
     },
     {
       id: 2,
-      name: "Danutha",
+      name: "Jane Smith",
       message:
-        "Thanks to Ceygiri Labs, our web presence has never been stronger. Their team of developers is knowledgeable, reliable, and always goes above and beyond to ensure our satisfaction.",
+        "I had a wonderful experience with the local government. They were very responsive and helpful.",
     },
     {
       id: 3,
-      name: "Sachin",
+      name: "Michael Johnson",
       message:
-        "Working with Ceygiri Labs was a game-changer for our business. Their software solutions helped us streamline our processes and save valuable time and resources.",
+        "The community initiatives led by the council have greatly improved our neighborhood.",
+    },
+    {
+      id: 4,
+      name: "Emily Davis",
+      message:
+        "Efficient and friendly service! The staff at the Pradeshiya Sabha are always willing to assist.",
     },
   ]);
 
