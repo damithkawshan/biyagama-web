@@ -41,6 +41,7 @@ function App(): JSX.Element {
       </header>
 
       <nav className="site-nav">
+        <img src="/GOVLKlogo.png" alt="Biyagama Logo" className="nav-favicon" />
         <button className={`nav-toggle ${isNavOpen ? "open" : ""}`} aria-label="Toggle navigation" onClick={toggleNav}>
           <span className="hamburger">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">

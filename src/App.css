@@ -95,6 +95,13 @@ body {
 body {
   padding-top: calc(var(--nav-height) + 8px);
 }
+.nav-favicon {
+  position: absolute;
+  left: 20px;
+  height: 32px;
+  width: auto;
+  z-index: 1002;
+}
 .nav-toggle {
   display: none;
   background: none;
