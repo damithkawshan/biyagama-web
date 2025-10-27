@@ -50,10 +50,10 @@ function App(): JSX.Element {
         <img src="/GOVLKlogo.png" alt="LGC Logo" className="nav-favicon" />
         <button className={`nav-toggle ${isNavOpen ? "open" : ""}`} aria-label="Toggle navigation" onClick={toggleNav}>
           <span className="hamburger">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect y="7" width="32" height="3.5" rx="1.75" fill="#004080" />
-              <rect y="14" width="32" height="3.5" rx="1.75" fill="#004080" />
-              <rect y="21" width="32" height="3.5" rx="1.75" fill="#004080" />
+            <svg className="hamburger-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect className="hamburger-bar" y="7" width="32" height="3.5" rx="1.75" />
+              <rect className="hamburger-bar" y="14" width="32" height="3.5" rx="1.75" />
+              <rect className="hamburger-bar" y="21" width="32" height="3.5" rx="1.75" />
             </svg>
           </span>
         </button>
@@ -80,12 +80,6 @@ function App(): JSX.Element {
                 position: 'absolute',
                 left: 0,
                 top: '100%',
-                background: '#1761a0',
-                color: 'white',
-                minWidth: '220px',
-                borderRadius: '0 0 8px 8px',
-                boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
-                padding: '10px 0',
                 zIndex: 1001,
                 display: aboutDropdownOpen ? 'block' : 'none'
               }}
@@ -100,11 +94,11 @@ function App(): JSX.Element {
           <li><Link to="/leadership">OUR TEAM</Link></li>
           <li><Link to="/town-map">TOWN MAP</Link></li>
           <li><Link to="/">OUR SERVICES</Link></li>
-          <li><Link to="/about">OUR TOWN</Link></li>
+          {/* <li><Link to="/about">OUR TOWN</Link></li> */}
           <li><Link to="/news">NEWSROOM</Link></li>
           <li><Link to="/waste">SUSTAINABLE TOWN</Link></li>
           <li><Link to="/contact">CONTACT US</Link></li>
-          <li><Link to="/secretary">SECRETARY'S MESSAGE</Link></li>
+          {/* <li><Link to="/secretary">SECRETARY'S MESSAGE</Link></li> */}
         </ul>
       </nav>
 
