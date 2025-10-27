@@ -10,9 +10,15 @@ import "./App.css";
 
 function App(): JSX.Element {
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
+  const [aboutDropdownOpen, setAboutDropdownOpen] = useState<boolean>(false);
 
   const toggleNav = (): void => setIsNavOpen((v) => !v);
   const closeNav = (): void => setIsNavOpen(false);
+
+  // Dropdown handlers
+  const handleAboutMouseEnter = () => setAboutDropdownOpen(true);
+  const handleAboutMouseLeave = () => setAboutDropdownOpen(false);
+  const handleAboutClick = () => setAboutDropdownOpen((v) => !v);
 
   return (
     <Router>
@@ -41,7 +47,7 @@ function App(): JSX.Element {
       </header>
 
       <nav className="site-nav">
-        <img src="/GOVLKlogo.png" alt="Biyagama Logo" className="nav-favicon" />
+        <img src="/GOVLKlogo.png" alt="LGC Logo" className="nav-favicon" />
         <button className={`nav-toggle ${isNavOpen ? "open" : ""}`} aria-label="Toggle navigation" onClick={toggleNav}>
           <span className="hamburger">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,7 +66,37 @@ function App(): JSX.Element {
               </svg>
             </Link>
           </li>
-          <li><Link to="/about">ABOUT US</Link></li>
+          <li
+            className="nav-dropdown"
+            onMouseEnter={handleAboutMouseEnter}
+            onMouseLeave={handleAboutMouseLeave}
+            onClick={handleAboutClick}
+            style={{ position: 'relative' }}
+          >
+            <span className="nav-link" tabIndex={0}>ABOUT US</span>
+            <ul
+              className="dropdown-menu"
+              style={{
+                position: 'absolute',
+                left: 0,
+                top: '100%',
+                background: '#1761a0',
+                color: 'white',
+                minWidth: '220px',
+                borderRadius: '0 0 8px 8px',
+                boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
+                padding: '10px 0',
+                zIndex: 1001,
+                display: aboutDropdownOpen ? 'block' : 'none'
+              }}
+            >
+              <li><Link to="/about">ප්‍රාදේශීය සභාව</Link></li>
+              <li><Link to="/about">සාමාන්‍යා කෝට්ටේරු</Link></li>
+              <li><Link to="/about">කාර්යයන්</Link></li>
+              <li><Link to="/about">කාර්ය මණ්ඩල නිලධාරින්</Link></li>
+              <li><Link to="/about">පරිපාලන වාණු</Link></li>
+            </ul>
+          </li>
           <li><Link to="/leadership">OUR TEAM</Link></li>
           <li><Link to="/town-map">TOWN MAP</Link></li>
           <li><Link to="/">OUR SERVICES</Link></li>
