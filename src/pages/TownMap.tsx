@@ -124,39 +124,6 @@ function TownMap(): JSX.Element {
       </motion.div>
 
       <div className="town-map-content">
-        {/* PDF Display */}
-        {/* Regional Information */}
-        {/* <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="section-card"
-        >
-          <div className="section-header">
-            <span className="section-icon">📌</span>
-            <h3 className="section-title">ප්‍රාදේශීය තොරතුරු / Regional Information</h3>
-          </div>
-          <div className="regional-grid">
-            {areaInfo.map((item, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="regional-item"
-              >
-                <span className="regional-icon">{item.icon}</span>
-                <div className="regional-content">
-                  <strong className="regional-label">{item.label}</strong>
-                  <span className="regional-value">{item.value}</span>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div> */}
-
         {/* Statistics Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

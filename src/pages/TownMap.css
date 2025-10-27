@@ -9,7 +9,8 @@
 .town-map-hero {
   background: linear-gradient(to right, #5c2020, #b35353);
   color: white;
-  padding: 4rem 1.5rem;
+  padding: 1rem 1.5rem;
+  margin-top: auto;
   margin-bottom: 0;
 }
 
@@ -22,7 +23,8 @@
 .town-map-hero h1 {
   font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-top: 0;
+  margin-bottom: 0.25rem;
   line-height: 1.2;
   text-align: center;
 }
@@ -41,7 +43,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
-  margin: 1.5rem auto;
+  margin: 0.9rem auto 1.5rem;
   max-width: 900px;
   justify-items: center;
 }
