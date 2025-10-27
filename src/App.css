@@ -2,6 +2,7 @@
   width: 32px;
   height: 32px;
   display: block;
+  margin: 0 auto;
 }
 .hamburger-bar {
   fill: var(--primary);
@@ -40,7 +41,7 @@
   --muted: #6b7280;
   --bg: #ffffff;
   --section-bg: #f7fafc;
-  --nav-height: 40px;
+  --nav-height: 35px;
 }
 
 * { box-sizing: border-box; }
@@ -135,30 +136,36 @@ body {
   padding-top: calc(var(--nav-height) + 8px);
 }
 .nav-favicon {
-  position: relative;
-  left: 0;
-  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.5em;
   width: auto;
-  margin-right: 16px;
+  margin-left: 0.2em;
+  margin-right: 2em;
   z-index: 1;
-  vertical-align: middle;
   flex-shrink: 0;
 }
 
 @media (max-width: 900px) {
   .nav-favicon {
-    height: 28px;
-    margin: 0 0 12px 0;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.5em;
+    margin-left: 0.2em;
+    margin-right: 2em;
+    margin-bottom: 12px;
     position: static;
   }
 }
 .nav-toggle {
   display: none;
+  align-items: center;
+  justify-content: center;
   background: none;
   border: none;
   position: absolute;
-  top: 14px;
   right: 14px;
   z-index: 1001;
   cursor: pointer;
