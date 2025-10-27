@@ -5,6 +5,7 @@ import Leadership from "./pages/Leadership";
 import SecretaryMessage from "./pages/SecretaryMessage";
 import WasteManagement from "./pages/WasteManagement";
 import Contact from "./pages/Contact";
+import Footer from "./components/Footer";
 import { Link } from "react-router-dom";
 import "./App.css";
 
@@ -94,7 +95,7 @@ function App(): JSX.Element {
           <li><Link to="/leadership">OUR TEAM</Link></li>
           <li><Link to="/town-map">TOWN MAP</Link></li>
           <li><Link to="/">OUR SERVICES</Link></li>
-          {/* <li><Link to="/about">OUR TOWN</Link></li> */}
+          <li><Link to="/products">SERVICES</Link></li>
           <li><Link to="/news">NEWSROOM</Link></li>
           <li><Link to="/waste">SUSTAINABLE TOWN</Link></li>
           <li><Link to="/contact">CONTACT US</Link></li>
@@ -114,20 +115,7 @@ function App(): JSX.Element {
         <Route path="/contact" element={<Contact />} />
       </Routes>
 
-      <footer className="site-footer">
-        <p>
-          &copy; {new Date().getFullYear()} Biyagama Pradeshiya Sabha. All rights
-          reserved. | Updated: {new Date().toLocaleDateString(undefined, {
-            year: "numeric",
-            month: "long",
-            day: "numeric",
-          })}
-        </p>
-        <p className="footer-links">
-          <a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a> |
-          <a href="#sitemap"> Sitemap</a>
-        </p>
-      </footer>
+      <Footer />
     </Router>
   );
 }
