@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home, About, Products, News } from "./pages";
+import { Home, About, Products, News, TownMap } from "./pages";
 import Leadership from "./pages/Leadership";
 import SecretaryMessage from "./pages/SecretaryMessage";
 import WasteManagement from "./pages/WasteManagement";
@@ -62,7 +62,7 @@ function App(): JSX.Element {
           </li>
           <li><Link to="/about">ABOUT US</Link></li>
           <li><Link to="/leadership">OUR TEAM</Link></li>
-          <li><Link to="/about">TOWN MAP</Link></li>
+          <li><Link to="/town-map">TOWN MAP</Link></li>
           <li><Link to="/">OUR SERVICES</Link></li>
           <li><Link to="/about">OUR TOWN</Link></li>
           <li><Link to="/news">NEWSROOM</Link></li>
@@ -77,6 +77,7 @@ function App(): JSX.Element {
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Products />} />
         <Route path="/news" element={<News />} />
+        <Route path="/town-map" element={<TownMap />} />
         <Route path="/leadership" element={<Leadership />} />
         <Route path="/secretary" element={<SecretaryMessage />} />
         <Route path="/waste" element={<WasteManagement />} />
