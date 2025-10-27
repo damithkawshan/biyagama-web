@@ -1,0 +1,393 @@
+/* TownMap Page Styles */
+
+.town-map-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #f9fafb, #ffffff);
+}
+
+/* Hero Section */
+.town-map-hero {
+  background: linear-gradient(to right, #5c2020, #b35353);
+  color: white;
+  padding: 4rem 1.5rem;
+  margin-bottom: 0;
+}
+
+.town-map-hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.town-map-hero h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.town-map-hero p {
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  line-height: 1.8;
+  opacity: 0.95;
+  margin: 0.5rem auto;
+  max-width: 900px;
+  text-align: justify;
+}
+
+/* Hero Info Grid */
+.hero-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem auto;
+  max-width: 900px;
+  justify-items: center;
+}
+
+.hero-info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  backdrop-filter: blur(4px);
+  width: 100%;
+  max-width: 250px;
+}
+
+.hero-info-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.hero-info-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-info-label {
+  display: block;
+  font-size: 0.875rem;
+  opacity: 0.9;
+  font-weight: 600;
+  margin-bottom: 0.125rem;
+}
+
+.hero-info-value {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Content Container */
+.town-map-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+/* Section Cards */
+.section-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e5e7eb;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.section-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.section-title {
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-weight: 700;
+  color: #5c2020;
+  margin: 0;
+  line-height: 1.4;
+  word-break: keep-all;
+}
+
+/* PDF Section */
+.pdf-container {
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  margin-bottom: 3rem;
+}
+
+.pdf-header {
+  background: linear-gradient(to right, #5c2020, #b35353);
+  color: white;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.pdf-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.pdf-download-btn {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: white;
+  backdrop-filter: blur(4px);
+}
+
+.pdf-download-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.pdf-wrapper {
+  padding: 0.5rem;
+  background: #f9fafb;
+}
+
+.pdf-iframe {
+  width: 100%;
+  min-height: 600px;
+  border: none;
+  border-radius: 0.5rem;
+  background: white;
+}
+
+/* Regional Info Grid */
+.regional-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.regional-item {
+  background: linear-gradient(135deg, #f9fafb 0%, #ffffff 100%);
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #f3f4f6;
+  transition: all 0.2s;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.regional-item:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.regional-icon {
+  font-size: 1.75rem;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.regional-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.regional-label {
+  color: #5c2020;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.regional-value {
+  color: #374151;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+  justify-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #f3f4f6;
+  transition: all 0.2s;
+  text-align: center;
+  width: 100%;
+  max-width: 140px;
+}
+
+.stat-card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.stat-icon {
+  font-size: 1.8rem;
+  margin-bottom: 0.4rem;
+}
+
+.stat-value {
+  font-size: 1.3rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #5c2020, #b35353);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0.4rem 0;
+  line-height: 1.2;
+}
+
+.stat-label {
+  color: #6b7280;
+  font-size: 0.9rem;
+  line-height: 1.3;
+  margin-top: 0.4rem;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+/* Facilities Grid */
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.facility-card {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #f3f4f6;
+  transition: all 0.2s;
+  width: 100%;
+  max-width: 160px;
+}
+
+.facility-card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.facility-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.facility-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #5c2020;
+  margin: 0.5rem 0;
+}
+
+.facility-label {
+  color: #6b7280;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  margin-top: 0.5rem;
+  word-break: keep-all;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .town-map-hero {
+    padding: 2.5rem 1rem;
+  }
+
+  .town-map-content {
+    padding: 2rem 1rem;
+  }
+
+  .section-card {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .pdf-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .pdf-title {
+    font-size: 1rem;
+  }
+
+  .pdf-download-btn {
+    justify-content: center;
+  }
+
+  .regional-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .facilities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.25rem;
+  }
+
+  .stat-value {
+    font-size: 1.5rem;
+  }
+
+  .facility-value {
+    font-size: 1.5rem;
+  }
+}
